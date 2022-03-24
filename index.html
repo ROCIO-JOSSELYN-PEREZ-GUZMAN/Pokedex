@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang =" es " >
+<head>
+    <meta charset ="UTF-8" >
+    <meta  http-equiv =" X-UA-Compatible "content =" IE=edge" >
+    <meta name ="viewport" content ="ancho=ancho-del-dispositivo, escala-inicial=1.0">
+    <link rel="shortcut icon" href="parque.png">
+    <title>Lanzamiento de Pokédex X</title>
+    <link  rel="stylesheet"href ="poke.css">  
+</head>
+<body >
+    
+    <div class="contenido">
+        <h1>Pokedex</h1>
+        <div>
+        <input type="text" id="pokeName" name="pokeName"placeholder="Nombre o id del Pokemon" class="buscar"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="40" required>      
+        <ion-icon name="arrow-forward-circle-outline" onclick="fetchPokemon()"></ion-icon><br>
+        <img src ="poke.png" alt ="Pokémon" id ="pokeImg"width="150px">
+        </div>
+        <div class="elemento">
+            <dl>
+                <dt><h3 id="nombre"></h3></dt>
+                <dt><h3 id="tipo"></h3></dt>
+                <dt><h3 id="stat-vida"></h3></dt>
+                <dt><h3 id="stat-ataque"></h3></dt>
+                <dt><h3 id="stat-defensa"></h3></dt>
+                <dt><h3 id="stat-ataque-especial"></h3></dt>
+                <dt><h3 id="stat-defensa-especial"></h3></dt>
+                <dt><h3 id="stat-velocidad"></h3></dt>
+                <dt><h3 id="lista-habilidades"></h3></dt>
+                <dt class="movimiento"><h3 id="lista-movimiento"></h3></dt>
+            </dl>
+    </div>
+    </div>
+    <video src="video.mp4" type="video/mp4" autoplay muted loop>
+    </video>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<footer>
+    <script src="pokedex.js"></script>
+</footer>
+</html>
